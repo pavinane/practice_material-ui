@@ -39,11 +39,11 @@ const theme = createTheme({
 
 const TourCard = () => {
   return (
-    <Grid container spacing={5}>
+    <Grid container spacing={5} justifyContent="center">
       <ThemeProvider theme={theme}>
         {ImageDatas.map((item) => {
           return (
-            <Grid item xs={3}>
+            <Grid item sx={{ xs: 8 }} sm={6} md={3}>
               <Paper elevation={10}>
                 <img
                   src={item.img}
